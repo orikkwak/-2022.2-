@@ -9,7 +9,8 @@ public interface IntegerListInterface {
 	public void set(int i, Integer x);
 	public int indexOf(Integer x);
 	public int len();
-	public int total();
+	public void printAll();
 	public boolean isEmpty();
 	public void clear();
+	int total();
 }

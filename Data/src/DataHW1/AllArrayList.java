@@ -107,13 +107,12 @@ public class AllArrayList<E> implements AllListInterface<E> {
 		return numItems;
 	}
 	
-	public int total() {
+	public int all() {
 		for(E i : (E[])new Object[DEFAULT_CAPACITY]) {
-			
+			System.out.println(i + " ");
 		}
-		return 0;
-		
-	}
+		return numItems;
+	} // 과제 모든값 출력
 
 	@Override
 	public boolean isEmpty() {

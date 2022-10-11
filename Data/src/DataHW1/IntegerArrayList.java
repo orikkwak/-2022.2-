@@ -127,4 +127,10 @@ public class IntegerArrayList implements IntegerListInterface {
 			System.out.print(item[i] + " ");
 		System.out.println();
 	}
+	
+	@Override
+	public int total() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 }
