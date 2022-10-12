@@ -106,6 +106,26 @@ public class AllArrayList<E> implements AllListInterface<E> {
 		// TODO Auto-generated method stub
 		return numItems;
 	}
+	public void max() {
+		int m = numItems;
+		for(int i=1 ; i<item.length ; i++) {
+			if(numItems > m) {
+				m = numItems;
+			}
+		}
+		System.out.println(m);
+		
+	}
+	public void min() {
+		int m = numItems;
+		for(int i=1 ; i<item.length ; i++) {
+			if(numItems < m) {
+				m = numItems;
+			}
+		}
+		System.out.println(m);
+		
+	}
 	
 	public int all() {
 		for(E i : (E[])new Object[DEFAULT_CAPACITY]) {
