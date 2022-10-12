@@ -39,6 +39,19 @@ public class AllArrayList<E> implements AllListInterface<E> {
 		}
 	}
 
+//	public Integer get(int index) {
+//		if(index >= 0 && index <= numItems -1)
+//			return item[index+1];
+//		else
+//			return null;
+//	}
+//	
+//	public void set(int index, Integerx) {
+//		if(index >= 0 && index <= numItems -1)
+//			item[index + 1 ] = x;
+//		else
+//			System.out.println("인덱스 범위가 잘못되었다.");
+//	}
 	@Override
 	public E remove(int index) {
 		// TODO Auto-generated method stub
@@ -92,13 +105,12 @@ public class AllArrayList<E> implements AllListInterface<E> {
 	//private final int NOT_FOUND = -12345;
 	@Override
 	public int indexOf(E x) {
-		// TODO Auto-generated method stub
 		int i = 0;
  		for (i = 0; i < numItems; i++) {
 			if (((Comparable)item[i]).compareTo(x) == 0) 			
  				return i;
  		}
-    	return -1; // not exist
+    	return -1;
 	}
 
 	@Override
@@ -153,4 +165,9 @@ public class AllArrayList<E> implements AllListInterface<E> {
 			System.out.print(item[i] + " ");
 		System.out.println();
 	}
+//	public void printInterval(int i, int j) {
+//		for(;i<=j; i ++) {
+//			System.out.println(item[i]);
+//		}
+//	}
 }

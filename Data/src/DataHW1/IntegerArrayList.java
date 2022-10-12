@@ -128,6 +128,15 @@ public class IntegerArrayList implements IntegerListInterface {
 			System.out.print(item[i] + " ");
 		System.out.println();
 	}
+	
+	public void hap() {
+		int a = 0;
+		for(int i = 0 ; i < numItems; i++) {
+			a += item[i];
+		}
+		System.out.print("모든값의 합 : " + a);
+		System.out.println();
+	}
 
 	@Override
 	public int total() {
@@ -136,23 +145,26 @@ public class IntegerArrayList implements IntegerListInterface {
 	}
 
 	public void max() {
-		int max = item[0];
-
+		int a = 0;
+//		System.out.println("최대값 : " + numItems);
 		for (int i = 1; i < item.length; i++) {
-			if (item[i] > max) {
-				max = item[i];
-			}
+			if (item[i] > a) {
+				a = item[i];
+			}		
 		}
-		System.out.println("최대값 : " + max);
+		System.out.println("최대값 : " + a);
+		System.out.println();
 	}
+	
 	public void min() {
-		int min = item[0];
-
+		int min = 0;
+//		System.out.println("최소값 : " +  min);
 		for (int i = 1; i < item.length; i++) {
 			if (item[i] < min) {
 				min = item[i];
 			}
+			System.out.println("최소값 : " +  min);
+			System.out.println();
 		}
-		System.out.println("최소값 : " + min);
 	}
 }

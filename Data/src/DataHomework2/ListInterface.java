@@ -12,5 +12,8 @@ public interface ListInterface<E> {
 	public boolean isEmpty();
 	public int total();
 	public void clear();
+	public int hap();
+	public int maxList();
+	public int minList();
 	
 }
